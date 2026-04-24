@@ -571,4 +571,250 @@ body {
 .footer-svg-social {
   fill: #f4f4fd;
 }
+.subscribe {
+  color: var(--white);
+}
+.input-footer {
+  margin-top: 16px;
+  margin-right: 24px;
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  background-color: transparent;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: px;
+}
+input::placeholder {
+  color: var(--white);
+}
+.subscribe-button-footer {
+  border-radius: 4px;
+  padding: 8px 24px;
+  background: var(--iris);
+  color: var(--white);
+}
+.subscribe-button-footer:hover,
+.subscribe-button-footer:focus {
+  background-color: var(--ocean);
+}
+.svg-footer-frame {
+  fill: var(--white);
+}
+.div-footer-frame {
+  display: inline;
+  /* margin: 8px 24px 8px 16px; */
+  margin-top: 8px;
+}
 /* end of footer  */
+/* region modal  */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--navy-blue-modal);
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity var(--transition),
+    visibility var(--transition);
+}
+.backdrop.is-open {
+  pointer-events: auto;
+  opacity: 1;
+  visibility: visible;
+  z-index: 9999;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 408px;
+  min-height: 584px;
+  box-shadow:
+    0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--dairy);
+  border-radius: 4px;
+  transition: transform var(--transition);
+}
+.backdrop:not(.is-open) .modal {
+  transform: translate(-50%, -100%) scale(1.5);
+}
+.modal-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  background-color: var(--cornflower);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-close:hover,
+.modal-close:focus {
+  background-color: var(--ocean);
+  fill: var(--white);
+  border: none;
+}
+.text-modal {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--navy-blue);
+  margin-top: 72px;
+  margin-bottom: 16px;
+}
+.form-modal {
+  margin-left: 24px;
+}
+.input-wrapper {
+  position: relative;
+}
+.username {
+  border: 1px solid var(--navy-blue-modal);
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding-left: 38px;
+}
+.modal-person {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  fill: var(--navy-blue);
+}
+.username:hover,
+.username:focus + .modal-person {
+  fill: var(--ocean);
+  border-color: var(--ocean);
+}
+label {
+  margin-bottom: 4px;
+  margin-top: 8px;
+}
+.email {
+  border: 1px solid var(--navy-blue-modal);
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding-left: 38px;
+}
+.modal-email {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  fill: var(--navy-blue);
+}
+.email:hover,
+.email:focus + .modal-email {
+  fill: var(--ocean);
+  border-color: var(--ocean);
+}
+.tell {
+  border: 1px solid var(--navy-blue-modal);
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding-left: 38px;
+}
+.modal-tell {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  fill: var(--navy-blue);
+}
+.tell:hover,
+.tell:focus + .modal-tell {
+  fill: var(--ocean);
+  border-color: var(--ocean);
+}
+.comment {
+  padding: 8px 16px;
+  resize: none;
+  height: 120px;
+  width: 360px;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+.comment::placeholder {
+  color: var(--navy-blue-modal);
+}
+.checkbox-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 11.7px;
+  letter-spacing: 0.04em;
+  color: var(--light-slate);
+}
+/* Кастомний вигляд — порожній чекбокс */
+.checkbox-custom {
+  display: inline-flex;
+  min-width: 16px;
+  min-height: 16px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--navy-blue-modal);
+  border-radius: 2px;
+  transition:
+    background-color var(--transition),
+    border-color var(--transition);
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+}
+.icon-check {
+  fill: var(--cloud);
+  width: 10px;
+  height: 8px;
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+/* Коли чекбокс відмічений */
+.visually-hidden:checked + .checkbox-custom {
+  background-color: var(--ocean);
+  border-color: var(--ocean);
+}
+.visually-hidden:checked + .checkbox-custom .icon-check {
+  opacity: 1;
+}
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-left: 96px;
+  margin-right: 120px;
+}
+.modal-button {
+  margin-top: 24px;
+  width: 169px;
+  height: 56px;
+  border-radius: 4px;
+  padding: 16px 32px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: var(--iris);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  border: none;
+  transition: background-color var(--transition);
+}

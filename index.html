@@ -536,10 +536,121 @@
                 </li>
               </ul>
             </div>
+            <div>
+              <form>
+                <label class="subscribe" for="email">Subscribe</label><br />
+                <input
+                  class="input-footer"
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  required
+                />
+
+                <button class="subscribe-button-footer" type="submit">
+                  Subscribe
+                  <div class="div-footer-frame">
+                    <svg class="svg-footer-frame" width="24" height="24">
+                      <use href="./images/icons.svg#icon-frame"></use>
+                    </svg>
+                  </div>
+                </button>
+              </form>
+            </div>
           </div>
         </section>
       </div>
     </footer>
     <!-- #endregion footer -->
+    <!-- #region modal-overley -->
+    <div class="backdrop is-open">
+      <div class="modal">
+        <button class="modal-close" type="button" aria-label="Close Modal">
+          <svg class="modal-close-svg" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="text-modal">Leave your contacts and we will call you back</p>
+        <form class="form-modal">
+          <div>
+            <label for="username">Name</label>
+            <div class="input-wrapper">
+              <input
+                class="username"
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Name"
+                required
+              />
+              <svg class="modal-person" width="18" height="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div>
+            <label for="tell">Phone</label>
+            <div class="input-wrapper">
+              <input
+                class="tell"
+                type="tel"
+                id="tell"
+                name="tell"
+                placeholder="Phone"
+                required
+              />
+              <svg class="modal-tell" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <div class="input-wrapper">
+              <input
+                class="email"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+              <svg class="modal-email" width="18" height="18">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div>
+            <label for="comment">Comment</label>
+            <textarea
+              class="comment"
+              name="comment"
+              id="comment"
+              placeholder="Text input"
+            >
+            </textarea>
+          </div>
+          <div>
+            <label class="checkbox-label">
+              <input type="checkbox" class="visually-hidden" />
+              <span class="checkbox-custom">
+                <svg class="icon-check" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="#">Privacy Policy</a>
+            </label>
+          </div>
+          <div class="button-wrapper">
+            <button class="modal-button" type="button">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- #endregion modal-overley -->
   </body>
 </html>
