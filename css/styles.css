@@ -818,3 +818,7 @@ label {
   border: none;
   transition: background-color var(--transition);
 }
+.modal-button:hover,
+.modal-button:focus {
+  background-color: var(--ocean);
+}
