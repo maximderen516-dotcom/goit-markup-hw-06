@@ -516,8 +516,12 @@ body {
 }
 .footer-box {
   display: flex;
-  gap: 120px;
+  justify-content: space-between;
+  /* gap: 120px; */
   align-items: baseline;
+}
+.footer-margin-right {
+  margin-right: 120px;
 }
 /* можливо знадобиться №  */
 /* .margin-right {
@@ -571,6 +575,9 @@ body {
 .footer-svg-social {
   fill: #f4f4fd;
 }
+.footer-subscribe {
+  margin-left: auto;
+}
 .subscribe {
   color: var(--white);
 }
@@ -579,16 +586,27 @@ body {
   margin-right: 24px;
   border: 1px solid var(--white);
   border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: transparent;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 16px;
   padding-right: px;
+  width: 264px;
+  height: 40px;
 }
 input::placeholder {
   color: var(--white);
 }
+.input-footer:hover,
+.input-footer:focus {
+  border-color: var(--green);
+}
 .subscribe-button-footer {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  border: none;
   border-radius: 4px;
   padding: 8px 24px;
   background: var(--iris);
@@ -596,15 +614,16 @@ input::placeholder {
 }
 .subscribe-button-footer:hover,
 .subscribe-button-footer:focus {
-  background-color: var(--ocean);
+  background-color: var(--green);
 }
 .svg-footer-frame {
   fill: var(--white);
+  display: inline-flex;
+  align-items: center;
 }
 .div-footer-frame {
-  display: inline;
-  /* margin: 8px 24px 8px 16px; */
-  margin-top: 8px;
+  /* display: inline-flex;
+  align-items: center; */
 }
 /* end of footer  */
 /* region modal  */
@@ -673,11 +692,11 @@ input::placeholder {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--navy-blue);
-  margin-top: 72px;
-  margin-bottom: 16px;
+  padding-top: 72px;
+  padding-bottom: 16px;
 }
 .form-modal {
-  margin-left: 24px;
+  padding-left: 24px;
 }
 .input-wrapper {
   position: relative;
@@ -697,11 +716,15 @@ input::placeholder {
   fill: var(--navy-blue);
 }
 .username:hover,
-.username:focus + .modal-person {
-  fill: var(--ocean);
+.username:focus {
   border-color: var(--ocean);
 }
+.username:hover + .modal-person,
+.username:focus + .modal-person {
+  fill: var(--ocean);
+}
 label {
+  display: block;
   margin-bottom: 4px;
   margin-top: 8px;
 }
@@ -720,9 +743,12 @@ label {
   fill: var(--navy-blue);
 }
 .email:hover,
+.email:focus {
+  border-color: var(--ocean);
+}
+.email:hover + .modal-email,
 .email:focus + .modal-email {
   fill: var(--ocean);
-  border-color: var(--ocean);
 }
 .tell {
   border: 1px solid var(--navy-blue-modal);
@@ -739,9 +765,12 @@ label {
   fill: var(--navy-blue);
 }
 .tell:hover,
+.tell:focus {
+  border-color: var(--ocean);
+}
+.tell:hover + .modal-tell,
 .tell:focus + .modal-tell {
   fill: var(--ocean);
-  border-color: var(--ocean);
 }
 .comment {
   padding: 8px 16px;
@@ -749,17 +778,22 @@ label {
   height: 120px;
   width: 360px;
   border-radius: 4px;
+  border: 1px solid var(--navy-blue-modal);
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+  transition: border-color var(--transition);
 }
 .comment::placeholder {
   color: var(--navy-blue-modal);
 }
 .checkbox-label {
+  display: inline-flex;
+  align-items: center;
   font-weight: 400;
   font-size: 12px;
+  gap: 8px;
   line-height: 11.7px;
   letter-spacing: 0.04em;
   color: var(--light-slate);
@@ -803,6 +837,7 @@ label {
 }
 .modal-button {
   margin-top: 24px;
+  margin-bottom: 24px;
   width: 169px;
   height: 56px;
   border-radius: 4px;

@@ -76,7 +76,9 @@
               for Your Business
             </h1>
             <div>
-              <button class="button" type="button">Order Service</button>
+              <button data-modal-open class="button" type="button">
+                Order Service
+              </button>
             </div>
           </div>
         </section>
@@ -488,7 +490,7 @@
         <section>
           <div class="footer-box">
             <!-- class="margin-right" в  нижньому діві №  -->
-            <div>
+            <div class="footer-margin-right">
               <div class="footer-link">
                 <a class="footer-link" href="./index.html" aria-label="Home">
                   <span class="color-slate-logo">Web</span
@@ -498,8 +500,8 @@
               <div class="footer-desc">
                 <p class="footer-text p">
                   Increase the flow of customers and<br />
-                  sales for your business with<br />
-                  digital marketing & growth solutions.
+                  sales for your business with digital marketing & growth
+                  solutions.
                 </p>
               </div>
             </div>
@@ -536,26 +538,28 @@
                 </li>
               </ul>
             </div>
-            <div>
+            <div class="footer-subscribe">
               <form>
-                <label class="subscribe" for="email">Subscribe</label><br />
-                <input
-                  class="input-footer"
-                  id="email"
-                  type="email"
-                  name="email"
-                  placeholder="E-mail"
-                  required
-                />
+                <label class="subscribe" for="email">Subscribe</label>
+                <div>
+                  <input
+                    class="input-footer"
+                    id="email"
+                    type="email"
+                    name="email"
+                    placeholder="E-mail"
+                    required
+                  />
 
-                <button class="subscribe-button-footer" type="submit">
-                  Subscribe
-                  <div class="div-footer-frame">
+                  <button class="subscribe-button-footer" type="submit">
+                    Subscribe
+
+                    <!--<div class="div-footer-frame"> -->
                     <svg class="svg-footer-frame" width="24" height="24">
                       <use href="./images/icons.svg#icon-frame"></use>
                     </svg>
-                  </div>
-                </button>
+                  </button>
+                </div>
               </form>
             </div>
           </div>
@@ -564,9 +568,15 @@
     </footer>
     <!-- #endregion footer -->
     <!-- #region modal-overley -->
-    <div class="backdrop is-open">
+    <div class="backdrop is-open" data-modal>
+      <!-- is-open -->
       <div class="modal">
-        <button class="modal-close" type="button" aria-label="Close Modal">
+        <button
+          data-modal-close
+          class="modal-close"
+          type="submit"
+          aria-label="Close Modal"
+        >
           <svg class="modal-close-svg" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -584,7 +594,7 @@
                 placeholder="Name"
                 required
               />
-              <svg class="modal-person" width="18" height="18">
+              <svg class="modal-person" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
@@ -613,12 +623,12 @@
               <input
                 class="email"
                 type="email"
-                id="email"
+                id="-modal-email"
                 name="email"
                 placeholder="Email"
                 required
               />
-              <svg class="modal-email" width="18" height="18">
+              <svg class="modal-email" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
@@ -635,7 +645,7 @@
           </div>
           <div>
             <label class="checkbox-label">
-              <input type="checkbox" class="visually-hidden" />
+              <input name="checkbox" type="checkbox" class="visually-hidden" />
               <span class="checkbox-custom">
                 <svg class="icon-check" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use>
@@ -652,5 +662,7 @@
       </div>
     </div>
     <!-- #endregion modal-overley -->
+    <!-- Підключення скрипту кнопки -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
