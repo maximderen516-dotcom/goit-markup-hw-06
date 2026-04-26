@@ -602,6 +602,7 @@ body {
   flex-wrap: nowrap;
 }
 .input-footer {
+  color: var(--white);
   border: 1px solid var(--white);
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -627,6 +628,7 @@ input::placeholder {
   padding: 8px 24px;
   background: var(--iris);
   color: var(--white);
+  transition: background-color var(--transition);
 }
 .subscribe-button-footer:hover,
 .subscribe-button-footer:focus {
@@ -696,6 +698,7 @@ input::placeholder {
   stroke: rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.1);
   position: absolute;
+  fill: var(--navy-blue);
   top: 24px;
   right: 24px;
   border-radius: 50%;
@@ -854,7 +857,6 @@ label {
   color: var(--light-slate);
 }
 .comment {
-  margin-bottom: 4px;
   padding: 8px 16px;
   resize: none;
   height: 120px;
