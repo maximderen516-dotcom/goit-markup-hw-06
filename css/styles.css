@@ -588,11 +588,10 @@ body {
   columns: gap 24px;
 }
 .subscribe {
-  color: var(--light-slate);
+  color: var(--white);
+  margin-bottom: 16px;
 }
 .input-footer {
-  margin-top: 16px;
-  margin-right: 24px;
   border: 1px solid var(--white);
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -662,7 +661,7 @@ input::placeholder {
 .modal {
   padding-top: 72px;
   padding-bottom: 16px;
-
+  padding-right: 24px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -682,6 +681,7 @@ input::placeholder {
 .modal-close {
   stroke-width: 1px;
   stroke: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 24px;
   right: 24px;
@@ -697,7 +697,6 @@ input::placeholder {
 .modal-close:hover,
 .modal-close:focus {
   background-color: var(--ocean);
-  fill: var(--white);
   border: none;
 }
 .text-modal {
@@ -711,7 +710,7 @@ input::placeholder {
 }
 .form-modal > div + div {
   /* padding-left: 24px; */
-  margin-top: 16px;
+  margin-top: 8px;
 }
 .input-wrapper {
   position: relative;
@@ -722,6 +721,11 @@ input::placeholder {
   border-radius: 4px;
   width: 360px;
   height: 40px;
+  padding-left: 38px;
+}
+.label-name {
+  margin-left: 24px;
+  margin-bottom: 4px;
 }
 .modal-person {
   margin-left: 24px;
@@ -742,7 +746,6 @@ input::placeholder {
 }
 label {
   display: block;
-  margin-left: 24px;
 }
 .email {
   margin-left: 24px;
@@ -768,6 +771,10 @@ label {
 .email:focus + .modal-email {
   fill: var(--iris);
 }
+.label-tell {
+  margin-left: 24px;
+  margin-bottom: 4px;
+}
 .tell {
   margin-left: 24px;
   border: 1px solid var(--navy-blue-modal);
@@ -792,6 +799,17 @@ label {
 .tell:focus + .modal-tell {
   fill: var(--iris);
 }
+.label-email {
+  margin-left: 24px;
+  margin-bottom: 4px;
+}
+.form-group-textarea {
+  margin-top: 16px;
+}
+.label-comment {
+  margin-left: 24px;
+  margin-bottom: 4px;
+}
 .comment {
   margin-left: 24px;
   margin-bottom: 4px;
@@ -811,6 +829,7 @@ label {
   color: var(--navy-blue-modal);
 }
 .checkbox-label {
+  margin-left: 24px;
   display: inline-flex;
   align-items: center;
   font-weight: 400;
