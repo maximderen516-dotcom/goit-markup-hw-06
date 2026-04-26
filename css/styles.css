@@ -715,15 +715,16 @@ input::placeholder {
 }
 .modal-close-svg {
   fill: var(--navy-blue);
-}
-.modal-close-svg:hover,
-.modal-close-svg:focus {
-  fill: var(--white);
+  transition: fill var(--transition);
 }
 .modal-close:hover,
 .modal-close:focus {
   background-color: var(--ocean);
   border: none;
+}
+.modal-close:hover .modal-close-svg,
+.modal-close:focus .modal-close-svg {
+  fill: var(--white);
 }
 .text-modal {
   font-weight: 500;
@@ -884,6 +885,9 @@ label {
 }
 .form-group-comment + div {
   margin-top: 16px;
+}
+.form-group-comment + div + div {
+  margin-top: 24px;
 }
 .checkbox-label {
   /* margin-left: 24px; */
