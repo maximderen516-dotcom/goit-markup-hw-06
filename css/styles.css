@@ -698,7 +698,7 @@ input::placeholder {
   stroke: rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.1);
   position: absolute;
-  fill: var(--navy-blue);
+  /* fill: var(--navy-blue); */
   top: 24px;
   right: 24px;
   border-radius: 50%;
@@ -713,9 +713,15 @@ input::placeholder {
     border-color var(--transition),
     fill var(--transition);
 }
+.modal-close-svg {
+  fill: var(--navy-blue);
+}
+.modal-close-svg:hover,
+.modal-close-svg:focus {
+  fill: var(--white);
+}
 .modal-close:hover,
 .modal-close:focus {
-  fill: var(--white);
   background-color: var(--ocean);
   border: none;
 }
@@ -762,7 +768,7 @@ input::placeholder {
 }
 .username:hover,
 .username:focus {
-  border-color: var(--ocean);
+  border-color: var(--iris);
 }
 .username:hover + .modal-person,
 .username:focus + .modal-person {
@@ -857,6 +863,7 @@ label {
   color: var(--light-slate);
 }
 .comment {
+  outline: none;
   padding: 8px 16px;
   resize: none;
   height: 120px;
@@ -869,8 +876,14 @@ label {
   letter-spacing: 0.04em;
   transition: border-color var(--transition);
 }
+.comment:focus {
+  border-color: var(--iris);
+}
 .comment::placeholder {
   color: var(--navy-blue-modal);
+}
+.form-group-comment + div {
+  margin-top: 16px;
 }
 .checkbox-label {
   /* margin-left: 24px; */
@@ -928,7 +941,6 @@ label {
   margin-right: 120px; */
 }
 .modal-button {
-  margin-top: 24px;
   margin-bottom: 24px;
   width: 169px;
   height: 56px;
