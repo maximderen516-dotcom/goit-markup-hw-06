@@ -602,6 +602,11 @@ body {
   flex-wrap: nowrap;
 }
 .input-footer {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: 0.04em;
   color: var(--white);
   border: 1px solid var(--white);
   border-radius: 4px;
@@ -612,7 +617,7 @@ body {
   height: 40px;
   transition: border-color var(--transition);
 }
-input::placeholder {
+.email:placeholder {
   color: var(--white);
 }
 .input-footer:hover,
@@ -621,6 +626,13 @@ input::placeholder {
 }
 .subscribe-button-footer {
   display: inline-flex;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--white);
   align-items: center;
   gap: 16px;
   border: none;
@@ -844,6 +856,12 @@ label {
 .tell:focus + .modal-tell {
   fill: var(--iris);
 }
+.modal-person,
+.modal-email,
+.modal-tell {
+  transition: fill var(--transition);
+}
+
 .label-email {
   margin-bottom: 4px;
   font-family: var(--font-family);
@@ -851,9 +869,6 @@ label {
   font-size: 12px;
   letter-spacing: 0.04em;
   color: var(--light-slate);
-}
-.form-modal + div {
-  margin-top: 16px;
 }
 .label-comment {
   margin-bottom: 4px;
@@ -883,10 +898,7 @@ label {
 .comment::placeholder {
   color: var(--navy-blue-modal);
 }
-.form-group-comment + div {
-  margin-top: 16px;
-}
-.form-group-comment + div + div {
+.form-group-comment + .button-wrapper {
   margin-top: 24px;
 }
 .checkbox-label {
