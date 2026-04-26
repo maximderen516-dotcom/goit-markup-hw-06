@@ -539,27 +539,26 @@
               </ul>
             </div>
             <div class="footer-subscribe">
-              <form>
+              <form class="footer-subcribe-form">
                 <label class="subscribe" for="email">Subscribe</label>
-                <div>
-                  <input
-                    class="input-footer"
-                    id="email"
-                    type="email"
-                    name="email"
-                    placeholder="E-mail"
-                    required
-                  />
 
-                  <button class="subscribe-button-footer" type="submit">
-                    Subscribe
+                <input
+                  class="input-footer"
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  required
+                />
 
-                    <!--<div class="div-footer-frame"> -->
-                    <svg class="svg-footer-frame" width="24" height="24">
-                      <use href="./images/icons.svg#icon-frame"></use>
-                    </svg>
-                  </button>
-                </div>
+                <button class="subscribe-button-footer" type="submit">
+                  Subscribe
+
+                  <!--<div class="div-footer-frame"> -->
+                  <svg class="svg-footer-frame" width="24" height="24">
+                    <use href="./images/icons.svg#icon-frame"></use>
+                  </svg>
+                </button>
               </form>
             </div>
           </div>
@@ -574,7 +573,7 @@
         <button
           data-modal-close
           class="modal-close"
-          type="submit"
+          type="button"
           aria-label="Close Modal"
         >
           <svg class="modal-close-svg" width="8" height="8">
@@ -618,13 +617,13 @@
           </div>
 
           <div>
-            <label for="email">Email</label>
+            <label for="modal-email">Email</label>
             <div class="input-wrapper">
               <input
                 class="email"
                 type="email"
                 id="-modal-email"
-                name="email"
+                name="m0dal-email"
                 placeholder="Email"
                 required
               />
@@ -652,11 +651,11 @@
                 </svg>
               </span>
               I accept the terms and conditions of the
-              <a href="#">Privacy Policy</a>
+              <a class="privacy-policy" href="#">Privacy Policy</a>
             </label>
           </div>
           <div class="button-wrapper">
-            <button class="modal-button" type="button">Send</button>
+            <button class="modal-button" type="submit">Send</button>
           </div>
         </form>
       </div>
