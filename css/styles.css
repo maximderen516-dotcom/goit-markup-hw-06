@@ -600,6 +600,13 @@ body {
   align-items: center;
   gap: 24px;
   flex-wrap: nowrap;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--white);
 }
 .input-footer {
   font-family: var(--font-family);
@@ -617,12 +624,12 @@ body {
   height: 40px;
   transition: border-color var(--transition);
 }
-.email:placeholder {
-  color: var(--white);
-}
 .input-footer:hover,
 .input-footer:focus {
   border-color: var(--green);
+}
+.input-footer::placeholder {
+  color: var(--white);
 }
 .subscribe-button-footer {
   display: inline-flex;
@@ -749,7 +756,7 @@ body {
 }
 .form-modal > div + div {
   /* padding-left: 24px; */
-  margin-top: 8px;
+  margin-top: 16px;
 }
 .input-wrapper {
   position: relative;
