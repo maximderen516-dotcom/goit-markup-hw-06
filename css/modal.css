@@ -63,8 +63,7 @@
   justify-content: center;
   transition:
     background-color var(--transition),
-    border-color var(--transition),
-    fill var(--transition);
+    2 fill var(--transition);
 }
 .modal-close-svg {
   fill: var(--navy-blue);
@@ -90,7 +89,7 @@
 }
 .form-modal > div + div {
   /* padding-left: 24px; */
-  margin-top: 8px;
+  margin-top: 16px;
 }
 .form-modal {
   box-sizing: border-box;

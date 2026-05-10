@@ -105,7 +105,7 @@ body {
   position: relative;
   z-index: 1;
 }
-.visually-hidden {
+.sr-only {
   position: absolute;
   width: 1px;
   height: 1px;
