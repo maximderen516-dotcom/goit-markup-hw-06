@@ -1,0 +1,43 @@
+/* region Hero */
+.hero-wrapper {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+.hero {
+  z-index: 1;
+  position: relative;
+  max-width: 1440px;
+  margin: auto;
+  margin-top: 1px;
+  padding-top: 188px;
+  padding-bottom: 188px;
+  text-align: center;
+  background:
+    linear-gradient(rgba(46, 47, 66, 0.7)), url('../images/people-office.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
+.button {
+  margin: 48px auto 0 auto;
+  border-radius: 4px;
+  padding: 16px 32px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: var(--iris);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  border: none;
+  transition: background-color var(--transition);
+}
+.button:hover,
+.button:focus {
+  background-color: var(--ocean);
+}
+/* end of Hero */

@@ -1,0 +1,98 @@
+/* region portfolio  */
+.portfolio {
+  background-color: #fff;
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+.section-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--navy-blue);
+  /* margin-bottom: 72px; */
+  padding-bottom: 72px;
+}
+.section-title-portfolio {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--navy-blue);
+  padding-bottom: 72px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+
+  /* padding-bottom: 120px; */
+}
+.portfolio-list-item {
+  flex-basis: calc((100% - 48px) / 3);
+  transition:
+    box-shadow var(--transition),
+    background var(--transition);
+}
+.portfolio-list-item:hover,
+.portfolio-list-item:focus {
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: var(--white);
+}
+.img-portfolio {
+  display: block;
+}
+.card-content-portfolio {
+  text-align: left;
+}
+.card-text {
+  margin-top: 8px;
+}
+.portfolio-list-border {
+  border: none;
+}
+.card {
+  border-radius: 0 0 4px 4px;
+}
+.portfolio-wrapper {
+  border-left: 1px solid var(--cornflower);
+  border-bottom: 1px solid var(--cornflower);
+  border-right: 1px solid var(--cornflower);
+  padding: 32px 16px;
+}
+.portfolio-image-container {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--iris);
+  transform: translateY(100%);
+  transition: transform var(--transition);
+  display: flex;
+  justify-content: center;
+  padding: 40px 32px;
+}
+.portfolio-overlay p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: var(--cloud);
+}
+.portfolio-list-item:hover .portfolio-overlay {
+  transform: translateY(0);
+}
+/* end of portfolio   */

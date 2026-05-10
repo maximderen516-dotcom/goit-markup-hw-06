@@ -1,0 +1,57 @@
+/* region Teem */
+.section-team {
+  background: var(--cloud);
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+.team-list {
+  gap: 24px;
+  display: flex;
+}
+.team-background {
+  flex-basis: calc((100% - 72px) / 4);
+  border-radius: 0 0 4px 4px;
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: var(--white);
+}
+.img-team {
+  display: block;
+}
+.card-content {
+  text-align: center;
+  padding-top: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 32px;
+}
+.social-link {
+  display: flex;
+  gap: 24px;
+  margin-top: 8px;
+}
+.team-link {
+  display: flex;
+  background-color: var(--iris);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transition);
+}
+.team-svg-link {
+  fill: #f4f4fd;
+  justify-content: center;
+}
+.team-svg-background {
+  display: flex;
+}
+.team-link:hover,
+.team-link:focus {
+  background-color: var(--ocean);
+  border-radius: 50%;
+}
+/* end of Team  */

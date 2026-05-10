@@ -1,0 +1,46 @@
+/* region Features */
+.section-features {
+  background-color: #fff;
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.feature-list {
+  display: flex;
+  gap: 24px;
+}
+.feature-list-item {
+  padding: 0;
+  border-radius: 4px;
+  flex-basis: calc((100% - 72px) / 4);
+}
+.h3-list-item {
+  padding-bottom: 8px;
+  margin-top: 8px;
+}
+.svg-feature-background {
+  background: var(--cloud);
+  border: 1px solid var(--light-slate);
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.svg-feature {
+  position: relative;
+}
+
+/* end of Features */
