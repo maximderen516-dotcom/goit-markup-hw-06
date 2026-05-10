@@ -63,7 +63,7 @@
   justify-content: center;
   transition:
     background-color var(--transition),
-    2 fill var(--transition);
+    fill var(--transition);
 }
 .modal-close-svg {
   fill: var(--navy-blue);
@@ -89,6 +89,9 @@
 }
 .form-modal > div + div {
   /* padding-left: 24px; */
+  margin-top: 8px;
+}
+.form-group-comment {
   margin-top: 16px;
 }
 .form-modal {
