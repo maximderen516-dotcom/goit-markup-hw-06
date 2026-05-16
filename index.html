@@ -17,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
@@ -51,23 +51,109 @@
                 </li>
               </ul>
             </nav>
-            <address class="address-link-position">
+            <address class="address-link-menu-position">
               <a class="address-link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-              <a class="address-link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
+                >info@devstudio.com
+              </a>
             </address>
+            <button type="button" class="burger-btn">
+              <svg class="burger" width="24" height="24">
+                <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+              </svg>
+            </button>
           </div>
         </section>
       </div>
+      <!-- region mobile menu -->
+      <div class="mobile-menu is-open">
+        <div class="container mobile-menu-container">
+          <button class="menu-close" type="button" aria-label="Close Modal">
+            <!--   data-modal-close -->
+            <svg
+              class="menu-close-svg"
+              width="16"
+              height="8"
+              viewBox="0 0 32 32"
+              aria-hidden="true"
+            >
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="header-nav-list">
+              <li>
+                <a
+                  class="nav-list-item color-link-header-active active"
+                  href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li>
+                <a class="nav-list-item color-link-header" href="#portfolio"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a class="nav-list-item color-link-header" href="#contacts"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <address>
+            <ul class="address-link-menu">
+              <li class="address-link-position">
+                <a class="nav-link-menu-item" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a class="nav-link-menu-item" href="mailto:info@devstudio.com">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+          </address>
+          <div>
+            <ul class="social-link">
+              <li>
+                <a class="team-link" href="#"
+                  ><svg class="team-svg-link" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="team-link" href="#"
+                  ><svg class="team-svg-link" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="team-link" href="#"
+                  ><svg class="team-svg-link" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="team-link" href="#"
+                  ><svg class="team-svg-link" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
-
+    <!-- region mobile menu -->
     <!-- #endregion header -->
     <!-- #region main -->
     <main>
-      <section class="hero" id="hero">
+      <section class="hero hidden" id="hero">
         <div class="container">
           <!-- Hero Section -->
           <h1 class="h1">
@@ -83,7 +169,7 @@
       </section>
 
       <!-- #region Features -->
-      <section class="section-features" id="features">
+      <section class="section-features hidden" id="features">
         <div class="container">
           <h2 class="sr-only visually-hidden h2">Our Features</h2>
           <ul class="feature-list">
@@ -140,7 +226,7 @@
       </section>
       <!-- #endregion Features -->
       <!-- #region Team -->
-      <section class="section-team" id="team">
+      <section class="section-team hidden" id="team">
         <div class="container">
           <h2 class="section-title h2">Our Team</h2>
           <ul class="team-list ul">
@@ -329,7 +415,7 @@
       </section>
       <!-- #endregion Team -->
       <!--#region Our Portfolio -->
-      <section class="portfolio" id="portfolio">
+      <section class="portfolio hidden" id="portfolio">
         <div class="container">
           <h2 class="section-title-portfolio">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -484,7 +570,7 @@
     </main>
     <!-- #endregion main -->
     <!-- #region footer -->
-    <footer class="footer" id="footer">
+    <footer class="footer hidden" id="footer">
       <div class="container">
         <section>
           <div class="footer-box">
@@ -567,7 +653,7 @@
     </footer>
     <!-- #endregion footer -->
     <!-- #region modal-overley -->
-    <div class="backdrop" data-modal id="modal">
+    <div class="backdrop hidden" data-modal id="modal">
       <!-- is-open -->
       <div class="modal">
         <button
