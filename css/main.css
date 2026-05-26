@@ -1,8 +1,8 @@
-@import './Desktop/common.css';
-@import './Desktop/header.css';
-@import './Desktop/hero.css';
-@import './Desktop/features.css';
-@import './Desktop/team.css';
-@import './Desktop/portfolio.css';
-@import './Desktop/footer.css';
-@import './Desktop/modal.css';
+@import './module/common.css';
+@import './module/header.css';
+@import './module/hero.css';
+@import './module/features.css';
+@import './module/team.css';
+@import './module/portfolio.css';
+@import './module/footer.css';
+@import './module/modal.css';
