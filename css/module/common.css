@@ -109,6 +109,12 @@ body {
   .container {
     padding-right: 15px;
     padding-left: 15px;
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
   }
 }
 .visually-hidden {

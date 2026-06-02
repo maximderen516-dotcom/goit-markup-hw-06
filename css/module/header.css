@@ -1,15 +1,4 @@
 /* Region Header */
-.h1 {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  text-align: center;
-  max-width: 496px;
-  margin-left: auto;
-  margin-right: auto;
-}
 .header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow:

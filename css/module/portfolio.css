@@ -4,17 +4,7 @@
   padding-bottom: 120px;
   padding-top: 120px;
 }
-.section-title {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: var(--navy-blue);
-  /* margin-bottom: 72px; */
-  padding-bottom: 72px;
-}
+
 .section-title-portfolio {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;

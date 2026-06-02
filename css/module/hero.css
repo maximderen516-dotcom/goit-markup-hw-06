@@ -25,6 +25,24 @@
   background-color: transparent;
   background-repeat: no-repeat;
 }
+@media screen and (min-width: 768px) {
+  .hero {
+  }
+}
+/* 1*=96dpi
+2*=192dpi
+3*=288dpi */
+.h1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-align: center;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .button {
   margin: 48px auto 0 auto;
   border-radius: 4px;
