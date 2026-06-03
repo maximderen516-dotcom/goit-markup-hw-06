@@ -22,13 +22,14 @@
   padding-bottom: 72px;
 }
 .team-list {
-  gap: 24px;
+  gap: 72px;
   display: flex;
   flex-direction: column;
 }
 @media screen and (min-width: 767px) {
   .team-list {
     flex-direction: row;
+    gap: 24px;
   }
 }
 .team-background {
@@ -40,8 +41,15 @@
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: var(--white);
 }
+@media screen and (min-width: 767px) {
+  .team-background {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+}
 .img-team {
   display: block;
+  width: 100%;
+  height: auto;
 }
 .card-content {
   text-align: center;
