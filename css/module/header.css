@@ -18,7 +18,7 @@
   position: relative;
   z-index: 1;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .container {
     max-width: 768px;
     padding-right: 15px;
@@ -37,16 +37,34 @@
 }
 .header-nav {
   display: flex;
+  flex: 0;
+}
+@media screen and (max-width: 1158px) {
+  .header-nav {
+    flex: 1;
+  }
 }
 /* Тут проблема може бути з відступами */
 .header-nav-list {
-  margin-left: 76px;
   display: flex;
   gap: 40px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header-nav-list {
+    margin-left: 120px;
     display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header-nav-list {
+    margin-left: 76px;
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-nav-list {
+    margin-left: 76px;
+    margin-right: auto;
   }
 }
 .nav-list-item {
@@ -88,7 +106,7 @@
   right: 16px;
   top: 16px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .burger-menu {
     display: none;
   }
@@ -168,18 +186,27 @@
   opacity: 1;
 }
 .address-link-position {
-  display: flex;
-  gap: 40px;
+  display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .address-link-position {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    padding-right: 16px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .address-link-position {
+    flex-direction: row;
+    gap: 40px;
+    padding: 0;
   }
 }
 .address-link {
   transition: color var(--transition);
-  padding-bottom: 24px;
-  padding-top: 24px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -191,5 +218,11 @@
 .address-link:hover,
 .address-link:focus {
   color: var(--ocean);
+}
+@media screen and (min-width: 1158px) {
+  .address-link {
+    padding-bottom: 24px;
+    padding-top: 24px;
+  }
 }
 /* End of Header */
