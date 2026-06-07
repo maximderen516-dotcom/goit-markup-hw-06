@@ -17,6 +17,16 @@
   transition:
     opacity var(--transition),
     visibility var(--transition);
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+@media (min-width: 768px) {
+  .backdrop {
+  }
 }
 .backdrop.is-open {
   pointer-events: auto;
@@ -25,26 +35,64 @@
   z-index: 9999;
 }
 .modal {
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 72px;
-  padding-bottom: 24px;
+  position: relative;
+  width: 288px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 9px;
+  border-radius: 4px;
+  background-color: var(--dairy);
+  box-shadow:
+    0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  transition: transform var(--transition);
+}
+/* padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 9px;
   position: absolute;
-  top: 50%;
+  top: 8px;
   left: 50%;
+  width: 288px;
   border-radius: 4px;
   transform: translate(-50%, -50%);
-  width: 408px;
-  min-height: 584px;
   box-shadow:
     0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: var(--dairy);
-  transition: transform var(--transition);
-}
+  transition: transform var(--transition); */
 .backdrop:not(.is-open) .modal {
   transform: translate(-50%, -100%) scale(1.5);
+}
+@media (min-width: 768px) {
+  .modal {
+    width: 408px;
+    padding: 72px 24px 24px;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 408px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 72px;
+    padding-bottom: 24px;
+    top: 50%; */
+  }
+}
+@media (min-width: 1158px) {
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    padding-left: 24px;
+    padding-right: 24px;
+    min-height: 584px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 .modal-close {
   stroke-width: 1px;
@@ -86,6 +134,11 @@
   text-align: center;
   color: var(--navy-blue);
   margin-bottom: 16px;
+  margin-top: 72px;
+}
+@media (min-width: 768px) {
+  .text-modal {
+  }
 }
 /* .form-modal > div + div {
    padding-left: 24px; 
