@@ -31,11 +31,11 @@
               <a href="./index.html" class="logo"
                 ><span class="color-slate-logo">Web</span>Studio</a
               >
-              <a href="#" class="burger-menu"
-                ><svg class="burger" width="24" height="24">
+              <button type="button" class="burger-menu" aria-label="Open Menu">
+                <svg class="burger" width="24" height="24">
                   <use href="./images/icons.svg#icon-burger"></use>
                 </svg>
-              </a>
+              </button>
               <ul class="header-nav-list">
                 <li>
                   <a
@@ -573,6 +573,87 @@
       </div>
     </footer>
     <!-- #endregion footer -->
+    <!-- #region mobile menu -->
+    <div class="mobile-menu is-open">
+      <div class="container mobile-menu-container">
+        <button class="menu-close" type="button" aria-label="Close Modal">
+          <!--   data-modal-close -->
+          <svg
+            class="menu-close-svg"
+            width="8"
+            height="8"
+            viewBox="0 0 32 32"
+            aria-hidden="true"
+          >
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="mobile-nav-list">
+            <li>
+              <a class="menu-list-active active" href="./index.html">Studio</a>
+            </li>
+            <li>
+              <a class="menu-list-item color-link-mobile" href="#portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a class="menu-list-item color-link-mobile" href="#contacts"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <address>
+          <ul class="address-link--mobilemenu">
+            <li class="address-mobile-link-position">
+              <a class="nav-link-menu-item link-active" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="address-mobile-link-position">
+              <a class="mobile-link-menu-item" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+        </address>
+        <div>
+          <ul class="social-link-mobile-menu">
+            <li>
+              <a class="team-link-menu" href="#"
+                ><svg class="team-svg-link" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="team-link-menu" href="#"
+                ><svg class="team-svg-link" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="team-link-menu" href="#"
+                ><svg class="team-svg-link" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="team-link-menu" href="#"
+                ><svg class="team-svg-link" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion mobile menu -->
     <!-- #region modal-overley -->
     <div class="backdrop" data-modal id="modal">
       <!-- is-open -->
