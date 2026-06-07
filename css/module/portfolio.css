@@ -67,6 +67,9 @@
 }
 .img-portfolio {
   display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .card-content-portfolio {
   text-align: left;
@@ -89,6 +92,8 @@
 .portfolio-image-container {
   position: relative;
   overflow: hidden;
+  width: 100%;
+  height: 300px;
 }
 .portfolio-overlay {
   position: absolute;
@@ -98,9 +103,10 @@
   height: 100%;
   background-color: var(--iris);
   transform: translateY(100%);
-  transition: transform var(--transition);
+  transition: transform 250ms ease-in-out;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   padding: 40px 32px;
 }
 .portfolio-overlay p {
@@ -110,7 +116,9 @@
   letter-spacing: 0.02em;
   color: var(--cloud);
 }
-.portfolio-list-item:hover .portfolio-overlay {
+.portfolio-list-item:hover .portfolio-overlay,
+.portfolio-image-container:hover .portfolio-overlay,
+.card:hover .portfolio-overlay {
   transform: translateY(0);
 }
 /* end of portfolio   */
