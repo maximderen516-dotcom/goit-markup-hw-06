@@ -28,6 +28,14 @@
 }
 @media screen and (min-width: 767px) {
   .team-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 рівні колонки */
+    gap: 24 64px; /* відстань між рядками та колонками */
+  }
+}
+@media screen and (min-width: 1158px) {
+  .team-list {
+    display: flex;
     flex-direction: row;
     gap: 24px;
   }

@@ -32,8 +32,23 @@
 }
 @media (min-width: 767px) {
   .portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 рівні колонки */
+    gap: 24px 72px; /* відстань між рядками та колонками */
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 рівні колонки */
+    gap: 24px 48px; /* відстань між рядками та колонками */
+  }
+}
+@media (min-width: 1158px) {
+  .portfolio-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 рівні колонки */
+    gap: 24px 48px; /* відстань між рядками та колонками */
   }
 }
 .portfolio-list-item {
