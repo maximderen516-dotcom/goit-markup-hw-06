@@ -107,8 +107,8 @@ body {
 }
 @media screen and (min-width: 768px) {
   .container {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 16px;
+    padding-left: 16px;
     max-width: 768px;
   }
 }
@@ -117,7 +117,7 @@ body {
     max-width: 1158px;
   }
 }
-.visually-hidden {
+.sr-only {
   position: absolute;
   width: 1px;
   height: 1px;

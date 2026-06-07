@@ -1,8 +1,10 @@
-@import './module/common.css';
-@import './module/header.css';
-@import './module/hero.css';
-@import './module/features.css';
-@import './module/team.css';
-@import './module/portfolio.css';
-@import './module/footer.css';
-@import './module/modal.css';
+@import './common.css';
+@import './header.css';
+@import './hero.css';
+@import './features.css';
+@import './team.css';
+@import './portfolio.css';
+@import './footer.css';
+@import './modal.css';
+@import './mobile-menu.css';
+/* main.css */
