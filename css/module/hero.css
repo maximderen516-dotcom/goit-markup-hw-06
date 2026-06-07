@@ -14,17 +14,70 @@
   max-width: 1440px;
   margin: auto;
   margin-top: 1px;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   text-align: center;
-  background:
-    linear-gradient(rgba(46, 47, 66, 0.7)),
-    url('../../images/people-office.jpg');
+  background-color: #2e2f42;
   background-size: cover;
   background-position: center;
-  background-color: transparent;
   background-repeat: no-repeat;
+
+  /* мобільне зображення x1 */
+  background-image:
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url('../../images/people-office-mob.jpg');
 }
+
+/* мобільне x2 */
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url('../../images/people-office-mob@2x.jpg');
+  }
+}
+
+/* таблет x1 */
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 136px;
+    padding-bottom: 136px;
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url('../../images/people-office-tab.jpg');
+  }
+}
+
+/* таблет x2 */
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url('../../images/people-office-tab@2x.jpg');
+  }
+}
+
+/* десктоп x1 */
+@media screen and (min-width: 1158px) {
+  .hero {
+    max-width: 1440px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url('../../images/people-office.jpg');
+  }
+}
+
+/* десктоп x2 */
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url('../../images/people-office@2x.jpg');
+  }
+}
+
 @media screen and (min-width: 1158px) {
   .hero {
     max-width: 1440px;
