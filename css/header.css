@@ -57,7 +57,7 @@
 }
 @media screen and (max-width: 767px) {
   .header-nav-list {
-    margin-left: 76px;
+    margin-left: 120px;
     display: none;
   }
 }
@@ -108,7 +108,7 @@
   border: none;
   background: transparent;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .burger-menu {
     display: none;
   }
@@ -221,8 +221,18 @@
 .address-link:focus {
   color: var(--ocean);
 }
+@media screen and (min-width: 768px) {
+  .address-link {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
+}
 @media screen and (min-width: 1158px) {
   .address-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     padding-bottom: 24px;
     padding-top: 24px;
   }
