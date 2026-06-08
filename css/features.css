@@ -45,7 +45,11 @@
   }
 }
 .feature-list-item {
+  display: flex;
+  flex-direction: column;
+  column-gap: 8px;
   padding: 0;
+
   border-radius: 4px;
   flex-basis: calc((100% - 72px) / 4);
 }
@@ -60,8 +64,8 @@
   }
 }
 .h3-list-item {
-  padding-bottom: 8px;
-  margin-top: 8px;
+  /* padding-bottom: 8px;
+  margin-top: 8px; */
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 36px;
@@ -94,6 +98,11 @@
 @media (min-width: 768px) {
   .p-features {
     font-size: 16px;
+  }
+}
+@media (min-width: 1158px) {
+  .p-features {
+    font-weight: 400;
   }
 }
 .svg-feature-background {
