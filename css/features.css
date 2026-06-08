@@ -4,12 +4,13 @@
   padding-top: 96px;
   padding-bottom: 96px;
 }
-@media (min-width: 767px) {
+@media (min-width: 1158px) {
   .section-features {
     padding-bottom: 120px;
     padding-top: 120px;
   }
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -28,7 +29,7 @@
   gap: 72px;
   /* flex-wrap: wrap; */
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .feature-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 рівні колонки */
@@ -48,7 +49,7 @@
   border-radius: 4px;
   flex-basis: calc((100% - 72px) / 4);
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .feature-list-item {
     justify-self: center;
   }
@@ -69,16 +70,16 @@
   text-align: center;
   color: var(--navy-blue);
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .h3-list-item {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 111%;
     text-align: left;
   }
 }
 @media (min-width: 1158px) {
   .h3-list-item {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
 .p-features {
@@ -90,9 +91,8 @@
   letter-spacing: 0.02em;
   color: var(--slate);
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .p-features {
-    font-weight: 400;
     font-size: 16px;
   }
 }
