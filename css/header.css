@@ -18,7 +18,7 @@
   position: relative;
   z-index: 1;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
     padding-right: 15px;
@@ -46,22 +46,16 @@
 }
 /* Тут проблема може бути з відступами */
 .header-nav-list {
-  display: flex;
+  display: none;
   gap: 40px;
 }
-@media screen and (max-width: 767px) {
-  .header-nav-list {
-    margin-left: 120px;
-    display: none;
-  }
-}
-@media screen and (max-width: 767px) {
-  .header-nav-list {
-    margin-left: 120px;
-    display: none;
-  }
-}
 @media screen and (min-width: 768px) {
+  .header-nav-list {
+    margin-left: 120px;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1158px) {
   .header-nav-list {
     margin-left: 76px;
     margin-right: auto;
