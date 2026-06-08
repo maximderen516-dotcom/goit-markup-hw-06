@@ -104,11 +104,17 @@
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 768px) {
   .h1 {
     font-size: 56px;
     line-height: 1.07;
     max-width: 496px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .h1 {
+    font-size: 56px;
+    line-height: 1.07;
   }
 }
 .button {
@@ -127,6 +133,11 @@
   transition: background-color var(--transition);
 }
 @media screen and (min-width: 768px) {
+  .button {
+    margin-top: 36px;
+  }
+}
+@media screen and (min-width: 1158px) {
   .button {
     margin-top: 48px;
   }
