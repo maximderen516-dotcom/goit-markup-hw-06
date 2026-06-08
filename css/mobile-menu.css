@@ -1,6 +1,5 @@
 /*Секція меню */
 .mobile-menu {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -9,9 +8,23 @@
   background-color: #fff;
   z-index: 999;
   overflow-y: auto;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity var(--transition),
+    visibility var(--transition);
 }
 .mobile-menu.is-open {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.mobile-menu-container {
+  display: flex;
+  flex-direction: column;
+  /* min-height: 100vh; */
+  justify-content: space-between;
 }
 .menu-close {
   stroke-width: 1px;
@@ -65,7 +78,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding: 16px;
+  /* padding: 16px; */
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 20px;
@@ -84,9 +97,8 @@
 .social-link-mobile-menu {
   display: flex;
   gap: 40px;
-  padding-right: 24px;
-  padding-bottom: 40px;
   margin-top: 48px;
+  margin-bottom: 40px;
 }
 .team-link-menu {
   display: flex;
@@ -97,4 +109,13 @@
   align-items: center;
   justify-content: center;
   transition: background-color var(--transition);
+}
+
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
 }
