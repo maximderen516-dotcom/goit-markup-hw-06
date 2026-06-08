@@ -4,7 +4,7 @@
   padding-bottom: 96px;
   padding-top: 96px;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1158px) {
   .section-team {
     padding-bottom: 120px;
     padding-top: 120px;
@@ -26,11 +26,12 @@
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .team-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 рівні колонки */
-    gap: 24 64px; /* відстань між рядками та колонками */
+    grid-template-columns: repeat(2, 264px); /* 2 рівні колонки */
+    gap: 64px 24px; /* відстань між рядками та колонками */
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -41,7 +42,9 @@
   }
 }
 .team-background {
-  flex-basis: calc((100% - 72px) / 4);
+  width: 264px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 0 0 4px 4px;
   box-shadow:
     0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -49,9 +52,11 @@
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: var(--white);
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1158px) {
   .team-background {
     flex-basis: calc((100% - 72px) / 4);
+    width: auto;
+    margin: 0;
   }
 }
 .img-team {
