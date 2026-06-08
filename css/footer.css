@@ -4,12 +4,12 @@
   padding-top: 96px;
   padding-bottom: 96px;
 }
-@media (min-width: 767px) {
+/* @media (min-width: 768px) {
   .footer {
     padding-top: 100px;
     padding-bottom: 100px;
   }
-}
+} */
 .footer-box {
   display: flex;
   flex-direction: column;
@@ -18,7 +18,7 @@
   gap: 72px;
   align-items: center;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .footer-box {
     display: grid;
     grid-template-columns: 1fr 1fr; /* 2 рівні колонки */
@@ -40,7 +40,7 @@
   .footer-box {
     display: flex;
     flex-direction: row;
-    gap: 32px;
+    gap: 72px;
   }
 }
 .footer-margin-right {
@@ -59,7 +59,7 @@
   max-width: 264px;
   text-align: center;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .footer-desc {
     width: 264px;
     text-align: left;
@@ -79,7 +79,7 @@
   text-align: center;
   text-decoration: none;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .footer-link {
     text-align: left;
   }
@@ -117,7 +117,7 @@
   margin-bottom: 16px;
   text-align: center;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .p-footer-svg {
     text-align: left;
   }
@@ -152,7 +152,7 @@
   gap: 16px;
   margin-left: auto;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .footer-subscribe {
     display: grid;
     grid-column: 1 / 2;
@@ -171,13 +171,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
   flex-wrap: nowrap;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .subscribe-form {
     flex-direction: row;
-    gap: 16px;
+    gap: 24px;
   }
 }
 .subscribe {
@@ -193,6 +193,11 @@
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--white);
+}
+@media (min-width: 768px) {
+  .subscribe {
+    text-align: left;
+  }
 }
 .input-footer {
   font-family: var(--font-family);
@@ -210,7 +215,7 @@
   height: 40px;
   transition: border-color var(--transition);
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .input-footer {
     width: 264px;
     height: 40px;
