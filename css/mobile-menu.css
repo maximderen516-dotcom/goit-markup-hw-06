@@ -23,7 +23,7 @@
 .mobile-menu-container {
   display: flex;
   flex-direction: column;
-  /* min-height: 100vh; */
+  min-height: 100vh;
   justify-content: space-between;
 }
 .menu-close {
@@ -49,7 +49,7 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding: 72px 16px;
+  padding: 24px 16px;
 }
 .menu-list-item {
   font-family: 'Roboto', sans-serif;
@@ -71,7 +71,7 @@
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  color: var(--ocean);
+  /* color: var(--ocean); */
   border-radius: 2px;
 }
 .address-mobile-link-position {

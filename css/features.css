@@ -47,20 +47,22 @@
 .feature-list-item {
   display: flex;
   flex-direction: column;
-  column-gap: 8px;
+  gap: 8px;
   padding: 0;
-
+  width: 100%;
   border-radius: 4px;
-  flex-basis: calc((100% - 72px) / 4);
+  /* flex-basis: calc((100% - 72px) / 4); */
 }
 @media (min-width: 768px) {
   .feature-list-item {
     justify-self: center;
+    flex-basis: calc((100% - 24px) / 2);
   }
 }
 @media (min-width: 1158px) {
   .feature-list-item {
     justify-self: stretch;
+    flex-basis: calc((100% - 72px) / 4);
   }
 }
 .h3-list-item {
@@ -118,6 +120,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 8px;
   }
 }
 .svg-feature {
