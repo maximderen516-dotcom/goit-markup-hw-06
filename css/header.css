@@ -39,16 +39,17 @@
     margin-left: 76px;
   }
 }
+.nav-list-item {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: block;
+}
 @media screen and (min-width: 768px) {
   .margin-studio {
     margin-left: 120px;
   }
 }
-/* @media screen and (min-width: 1158px) {
-  .nav-list-item {
-    margin-left: 76px;
-  }
-} */
+
 .logo {
   color: #2e2f42;
   font-family: 'Raleway', sans-serif;
@@ -198,20 +199,20 @@
 .address-link {
   transition: color var(--transition);
   font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.5;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--slate);
   text-decoration: none;
 }
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .address-link {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
   }
-}
+} */
 .address-link:hover,
 .address-link:focus {
   color: var(--ocean);
