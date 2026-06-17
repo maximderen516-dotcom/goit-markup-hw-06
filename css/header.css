@@ -12,42 +12,19 @@
 .section-header {
   background-color: #fff;
 }
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 24px;
-  padding-left: 24px;
-  max-width: 320px;
-  position: relative;
-  z-index: 1;
-}
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
-@media screen and (min-width: 1158px) {
-  .container {
-    max-width: 1440px;
-  }
-}
 .header-box {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
 }
 .header-nav {
   display: flex;
   flex: 0;
 }
-@media screen and (max-width: 1158px) {
+@media screen and (min-width: 1158px) {
   .header-nav {
     flex: 1;
   }
 }
-/* Тут проблема може бути з відступами */
 .header-nav-list {
   display: none;
 }
@@ -60,21 +37,18 @@
 @media screen and (min-width: 1158px) {
   .header-nav-list {
     margin-left: 76px;
-    padding-right: 332px;
   }
 }
-/* .margin-studio {
-} */
 @media screen and (min-width: 768px) {
   .margin-studio {
     margin-left: 120px;
   }
 }
-@media screen and (min-width: 1158px) {
+/* @media screen and (min-width: 1158px) {
   .nav-list-item {
     margin-left: 76px;
   }
-}
+} */
 .logo {
   color: #2e2f42;
   font-family: 'Raleway', sans-serif;
@@ -86,7 +60,6 @@
   text-decoration: none;
   padding-bottom: 16px;
   padding-top: 16px;
-  /* padding-right: 16px; */
 }
 @media screen and (min-width: 768px) {
   .logo {
@@ -193,7 +166,7 @@
 .address-link-mobile-menu {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 24px;
 }
 @media screen and (min-width: 768px) {
   .address-link-mobile-menu {
@@ -207,7 +180,7 @@
   .address-link-position {
     display: flex;
     flex-direction: column;
-
+    gap: 12px;
     padding-bottom: 16px;
     padding-top: 16px;
     padding-right: 16px;
@@ -217,7 +190,9 @@
   .address-link-position {
     flex-direction: row;
     gap: 40px;
-    padding: 0;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    margin-left: auto;
   }
 }
 .address-link {
@@ -226,28 +201,27 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
   color: var(--slate);
   text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .address-link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 .address-link:hover,
 .address-link:focus {
   color: var(--ocean);
 }
-@media screen and (min-width: 768px) {
-  .address-link {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-  }
-}
 @media screen and (min-width: 1158px) {
   .address-link {
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding-bottom: 24px;
-    padding-top: 24px;
   }
 }
 
