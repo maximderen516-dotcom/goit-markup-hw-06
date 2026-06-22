@@ -76,6 +76,7 @@
   border-radius: 2px;
 }
 .mobile-address {
+  margin-left: auto;
   font-style: normal;
 }
 .address-link-mobile-menu {

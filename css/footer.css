@@ -123,7 +123,7 @@
   margin-bottom: 16px;
   text-align: center;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .p-footer-svg {
     text-align: left;
   }
@@ -132,6 +132,11 @@
   display: flex;
   justify-content: center;
   gap: 16px;
+}
+@media screen and (min-width: 768px) {
+  .footer-social {
+    justify-content: flex-start;
+  }
 }
 .footer-svg-link {
   display: flex;
