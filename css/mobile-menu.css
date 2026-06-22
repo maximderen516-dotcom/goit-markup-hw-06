@@ -72,19 +72,20 @@
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  /* color: var(--ocean); */
+  color: var(--navy-blue);
   border-radius: 2px;
 }
 .address-mobile-link-position {
   display: flex;
   flex-direction: column;
-  /* padding: 16px; */
+  font-style: normal;
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--iris);
+  gap: 24px;
 }
 .link-active {
   text-decoration: none;

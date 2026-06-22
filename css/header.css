@@ -185,6 +185,7 @@
     padding-bottom: 16px;
     padding-top: 16px;
     padding-right: 16px;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -193,7 +194,6 @@
     gap: 40px;
     padding-bottom: 24px;
     padding-top: 24px;
-    margin-left: auto;
   }
 }
 .address-link {
