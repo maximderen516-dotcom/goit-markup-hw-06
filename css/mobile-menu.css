@@ -75,6 +75,13 @@
   color: var(--navy-blue);
   border-radius: 2px;
 }
+.mobile-address {
+  font-style: normal;
+}
+.gap-24 {
+  display: flex;
+  gap: 24px;
+}
 .address-mobile-link-position {
   display: flex;
   flex-direction: column;
