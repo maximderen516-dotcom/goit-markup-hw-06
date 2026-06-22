@@ -85,7 +85,6 @@
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--iris);
-  gap: 24px;
 }
 .link-active {
   text-decoration: none;
