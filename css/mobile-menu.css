@@ -78,9 +78,15 @@
 .mobile-address {
   font-style: normal;
 }
-.gap-24 {
+.address-link-mobile-menu {
   display: flex;
+  flex-direction: column;
   gap: 24px;
+}
+@media screen and (min-width: 768px) {
+  .address-link-mobile-menu {
+    display: none;
+  }
 }
 .address-mobile-link-position {
   display: flex;
