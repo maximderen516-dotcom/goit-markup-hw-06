@@ -16,15 +16,15 @@
   display: flex;
   align-items: center;
 }
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .header-box {
+    justify-content: space-between;
   }
-} */
+}
 .header-nav {
   display: flex;
-  flex: 0;
 }
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 768px) {
   .header-nav {
     flex: 1;
   }
